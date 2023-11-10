@@ -55,6 +55,8 @@ def win():
     return False
 
 start()
+name_1 = input("Введите имя первого игрока :")
+name_2 = input("Введите имя второго игрока :")
 field = [["-"] * 3 for i in range(3)]
 hod = 0
 while True:
@@ -63,9 +65,9 @@ while True:
     pole()
 
     if hod % 2 == 1:
-        print ("Ходит крестик")
+        print ("Ходит крестик", name_1)
     else:
-        print ("Ходит нолик")
+        print ("Ходит нолик", name_2)
 
     x, y = ask()
 
